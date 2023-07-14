@@ -1,4 +1,4 @@
-import { NewGroup } from '@screens/NewGroup';
+import { Players } from '@screens/Players';
 import {
 	useFonts,
 	Roboto_400Regular,
@@ -19,7 +19,7 @@ export default function App() {
 				backgroundColor="transparent"
 				translucent
 			/>
-			{fontsLoader ? <NewGroup /> : <Loading />}
+			{fontsLoader ? <Players /> : <Loading />}
 		</ThemeProvider>
 	);
 }
