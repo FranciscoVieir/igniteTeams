@@ -1,10 +1,9 @@
 import { Header } from '@components/Header';
 import { ButtonIcoin } from '@components/ButtonIcoin';
-
 import { Highlight } from '@components/Highlight';
-
 import { Container, Form } from './styles';
 import { Input } from '@components/Input';
+import { Filter } from '@components/Filter';
 
 export function Players() {
 	return (
@@ -20,6 +19,8 @@ export function Players() {
 
 				<ButtonIcoin icon="add" />
 			</Form>
+
+			<Filter isActive title="Time A" />
 		</Container>
 	);
 }
