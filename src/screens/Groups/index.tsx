@@ -14,6 +14,11 @@ export function Groups() {
 		'amigos',
 	]);
 
+	const navigation = useNavigation();
+
+	function handleNewGroup() {
+		navigation.navigate('new');
+	}
 	return (
 		<Container>
 			<Header />
@@ -30,7 +35,7 @@ export function Groups() {
 				showsVerticalScrollIndicator={false}
 			/>
 
-			<Button title="Criar uma nova Turma" />
+			<Button title="Criar uma nova Turma" onPress={handleNewGroup} />
 		</Container>
 	);
 }
