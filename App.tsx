@@ -1,4 +1,4 @@
-import { Players } from '@screens/Players';
+import { Routes } from './src/routes';
 import {
 	useFonts,
 	Roboto_400Regular,
@@ -19,7 +19,7 @@ export default function App() {
 				backgroundColor="transparent"
 				translucent
 			/>
-			{fontsLoader ? <Players /> : <Loading />}
+			{fontsLoader ? <Routes /> : <Loading />}
 		</ThemeProvider>
 	);
 }
